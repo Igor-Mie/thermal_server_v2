@@ -14,7 +14,7 @@ DEVICE = "/dev/video0"
 WIDTH = 160
 HEIGHT = 120
 FRAME_SIZE = WIDTH * HEIGHT * 2
-ARCHIVE_DIR = "/home/avena/thermal_archive"
+ARCHIVE_DIR = os.path.join(os.path.expanduser("~"), "thermal_archive")
 ARCHIVE_INTERVAL = 30.0
 
 # ==========================================
