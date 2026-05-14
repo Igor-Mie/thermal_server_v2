@@ -338,12 +338,4 @@ def archive_viewer():
 # ==========================================
 # START APLIKACJI
 # ==========================================
-if __name__ == '__main__':
-    try:
-        reader_thread = threading.Thread(target=camera_reader_thread, daemon=True)
-        writer_thread = threading.Thread(target=archive_writer_thread, daemon=True)
-        reader_thread.start()
-        writer_thread.start()
-        app.run(host='0.0.0.0', port=8088, threaded=True)
-    except KeyboardInterrupt:
-        app_state["running"] = False
+# No automatic startup
